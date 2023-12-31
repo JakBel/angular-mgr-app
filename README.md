@@ -1,5 +1,12 @@
 # AngularMgrApp
 
+In this application, various Angular functionalities will be tested:
+* Routing
+* NgRx
+* RxJS, Observables and Subject
+* Forms template-driven and reactive
+* Http Client 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
 
 ## Development server

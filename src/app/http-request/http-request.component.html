@@ -1,0 +1,20 @@
+<div class="d-flex">
+  <button class="btn btn-outline-primary" (click)="fetchImages()">
+    {{ "Fetch data" | uppercase }}
+  </button>
+</div>
+<div class="box" *ngIf="!isLoading">
+  <div
+    *ngFor="let mess of message"
+    class="imageBox"
+    (click)="imageClick(mess)"
+  >
+    <img
+      [src]="mess.image || 'https://via.placeholder.com/350?text=No+Image'"
+      [alt]="mess.breed"
+      (error)="imageHandlerError(mess)"
+    />
+    <p>{{ mess.breed || "No name for this breed" }}</p>
+  </div>
+</div>
+<ngx-spinner type="ball-spin-clockwise-fade-rotating"></ngx-spinner>

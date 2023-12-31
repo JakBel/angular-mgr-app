@@ -1,0 +1,56 @@
+<nav class="navbar navbar-light">
+  <div class="grid">
+    <a class="navbar-brand" routerLink="/">Mgr App</a>
+    <div class="nav navigation" id="navbarNav">
+      <img src="" alt="" />
+      <ul class="nav">
+        <li class="nav-item">
+          <a
+            class="link"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="link" routerLink="/counter" routerLinkActive="active"
+            >Counter</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="link" routerLink="/forms-td" routerLinkActive="active"
+            >Forms-TD</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="link"
+            routerLink="/forms-reactive"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Forms-Reactive</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="link"
+            routerLink="/forms-reactive/images"
+            routerLinkActive="active"
+            >Forms-images</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="link" routerLink="/calculator" routerLinkActive="active"
+            >NgRx-Calculator</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="link" routerLink="/http-request" routerLinkActive="active"
+            >Http-request</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

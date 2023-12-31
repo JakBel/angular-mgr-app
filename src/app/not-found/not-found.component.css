@@ -1,0 +1,9 @@
+h1 {
+  color: var(--fourth-color);
+  margin-top: 70px;
+  font-size: 70px;
+}
+
+svg {
+  fill: var(--fourth-color);
+}

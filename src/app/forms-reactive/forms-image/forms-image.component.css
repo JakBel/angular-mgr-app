@@ -1,0 +1,36 @@
+.flex {
+  flex-wrap: wrap;
+  margin: 40px auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-weight: bold;
+  color: var(--fourth-color);
+  font-size: 55px;
+  margin-top: 30px;
+}
+
+.image-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  width: 250px;
+  height: 300px;
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+  align-items: center;
+  background-color: var(--second-color);
+  color: var(--fourth-color);
+  box-shadow: 6px 6px 20px 0px rgba(66, 68, 90, 1);
+}
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: 5px solid var(--fourth-color);
+  margin: 10px;
+}

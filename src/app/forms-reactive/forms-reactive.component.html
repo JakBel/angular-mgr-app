@@ -1,0 +1,53 @@
+<form class="form" [formGroup]="imageForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name" class="label">Name</label>
+    <input class="form-control" type="text" id="name" formControlName="name" />
+    <span
+      class="help-block"
+      *ngIf="
+        !imageForm.get('name').valid &&
+        imageForm.get('name').touched &&
+        !imageForm.get('name').hasError('maxLengthError')
+      "
+      >Enter a valid name</span
+    >
+    <span
+      class="help-block"
+      *ngIf="imageForm.get('name').hasError('maxLengthError')"
+      >Name must be less than 20 characters</span
+    >
+  </div>
+  <div>
+    <label for="imageURL" class="label">Image URL</label>
+    <input
+      class="form-control"
+      type="url"
+      id="imageURL"
+      formControlName="imageURL"
+    />
+    <span
+      class="help-block"
+      *ngIf="
+        !imageForm.get('imageURL').valid && imageForm.get('imageURL').touched
+      "
+      >Enter a valid image URL</span
+    >
+  </div>
+  <div>
+    <label for="rating" class="label">Rating</label>
+    <input
+      class="form-control"
+      type="number"
+      id="rating"
+      formControlName="rating"
+    />
+    <span
+      class="help-block"
+      *ngIf="!imageForm.get('rating').valid && imageForm.get('rating').touched"
+      >Enter a valid rating 1-10</span
+    >
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="imageForm.invalid">
+    Zatwierdź
+  </button>
+</form>

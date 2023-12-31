@@ -1,0 +1,19 @@
+body {
+  background-color: var(--second-color);
+}
+
+h1 {
+  color: var(--fourth-color);
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 100px;
+}
+
+p {
+  margin-top: 20px;
+  color: var(--second-color);
+  background-color: var(--fourth-color);
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 16px 0px rgba(66, 68, 90, 1);
+}

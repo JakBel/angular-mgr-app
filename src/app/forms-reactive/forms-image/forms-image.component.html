@@ -1,0 +1,20 @@
+<div class="d-flex f flex">
+  <h1 *ngIf="imageArray.length === 0">Your list of products is empty</h1>
+  <div *ngFor="let image of imageArray; index as i" class="image-block">
+    <img [src]="image.imageURL" alt="Product image" />
+    <p>Name: {{ image.name | uppercase }}</p>
+    <p>Rating: {{ image.rating }}</p>
+    <p>Cost: {{ image.cost }}$</p>
+  </div>
+  <!-- <div class="image-block">
+    <img
+      [src]="
+        'https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSLANNRycg1zfHVT4Z9QN9jE9OCRZWVgor080RZp9qRYbDP74NMp4W7ccjXivZW0HIKsDRVLOayrIf40Qkon-M'
+      "
+      alt="Product image"
+    />
+    <p>Doll</p>
+    <p>5</p>
+    <p>11000$</p>
+  </div> -->
+</div>

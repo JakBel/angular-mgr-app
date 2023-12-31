@@ -1,0 +1,28 @@
+input.ng-invalid.ng-touched {
+  border: 3px solid rgb(255, 54, 54);
+}
+
+.form {
+  width: 400px;
+  color: var(--fourth-color);
+  margin: 45px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form div {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-size: 20px;
+}
+
+.answer {
+  text-align: center;
+  color: var(--fourth-color);
+  background-color: whitesmoke;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 20px;
+}

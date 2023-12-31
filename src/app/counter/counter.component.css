@@ -1,0 +1,36 @@
+div {
+  text-align: center;
+}
+
+.counter {
+  max-width: 300px;
+  margin: 40px auto;
+  background-color: var(--second-color);
+  padding: 40px;
+  border-radius: 6px;
+  color: var(--fourth-color);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.counter .btn-light {
+  background: var(--first-color);
+  color: var(--fourth-color);
+  border: none;
+  padding: 15px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.counter .btn-light:hover {
+  background: #dadada;
+}
+
+h1 {
+  padding: 40px;
+  font-size: 40px;
+}
+
+span {
+  font-size: larger;
+}
+

@@ -1,0 +1,66 @@
+<div class="calculator">
+  <p>{{ currentNumber$ | async }}</p>
+  <p>{{ symbol$ | async }}</p>
+  <p>{{ inputValue$ | async }}</p>
+  <div class="parent">
+    <!-- Reset / + - -->
+    <div class="div1">
+      <button class="btn btn-secondary btnC" (click)="onResetClick()">
+        {{ resetSign$ | async }}
+      </button>
+      <button
+        class="btn btn-secondary"
+        (click)="onNegateClick()"
+        [disabled]="disabled$ | async"
+      >
+        +/-
+      </button>
+    </div>
+    <!-- Numbers -->
+    <div class="div2">
+      <button
+        class="btn btn-primary"
+        *ngFor="let num of numbers"
+        (click)="onDigitClick(num)"
+        [disabled]="disabled$ | async"
+      >
+        {{ num }}
+      </button>
+    </div>
+    <!-- Zero / . / = -->
+    <div class="div3">
+      <button
+        class="btn btn-primary btnC"
+        (click)="onZeroClick()"
+        [disabled]="disabled$ | async"
+      >
+        0
+      </button>
+      <button
+        class="btn btn-secondary"
+        (click)="onDotClick()"
+        [disabled]="disabled$ | async"
+      >
+        .
+      </button>
+      <button
+        class="btn btn-warning"
+        (click)="onEqualsClick()"
+        [disabled]="disabled$ | async"
+      >
+        =
+      </button>
+    </div>
+    <!-- Symbols -->
+    <div class="div4">
+      <button
+        class="btn btn-warning"
+        (click)="onSymbolClick(sym)"
+        *ngFor="let sym of symbols"
+        [disabled]="disabled$ | async"
+      >
+        {{ sym }}
+      </button>
+    </div>
+  </div>
+</div>
